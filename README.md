@@ -28,12 +28,15 @@ Files will then be recovered temporarily, but files may crash again a while late
 
 Permanent Fix:
 1) Running below command line.
+
 Reg.exe add "HKCU\Software\Microsoft\Office\16.0\Excel\Options" /v "ForceVBALoadFromSource" /t REG_DWORD /d "1" /f
 
 OR
+
 2) Running the attached ForceVBALoadFromSource.reg
 
 OR
+
 3) Add registry by regedit.exe
 
 Varying by the Excel verions, registry dir may vary.
