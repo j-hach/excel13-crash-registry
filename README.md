@@ -9,6 +9,7 @@ It occurs randomly after file access by other users.
   - Inputting any shortcuts which require a Macro compilation (e.g. Ctrl+S, Ctrl+C...)
 
 Feedback from Microsoft:
+
   "Files containing macros and that linked to other worksheets crashed Excel in vbe7.dll."
   https://answers.microsoft.com/en-us/msoffice/forum/msoffice_excel-mso_win10-mso_o365b/excel-64-bit-crashes-in-vbe7dll-when-saving-files/ae7d5132-988b-4300-aceb-8e9fb314bd54
 
@@ -26,17 +27,10 @@ Temporary Fix:
   
 Files will then be recovered temporarily, but files may crash again a while later.
 
-Permanent Fix:
+Permanent Fix: (any one of below)
 1) Add registry by regedit.exe
-
-OR
-
 2) Running the attached ForceVBALoadFromSource.reg
-
-OR
-
 3) Running below command line.
-
 Reg.exe add "HKCU\Software\Microsoft\Office\16.0\Excel\Options" /v "ForceVBALoadFromSource" /t REG_DWORD /d "1" /f
 
 
