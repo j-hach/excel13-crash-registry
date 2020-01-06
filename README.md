@@ -4,7 +4,7 @@ xlsm files are displaying "Microsoft Excel has stopped working." whenever being 
 It occurs randomly after file access by other users.
 
   Files are shared and accessed by different users in a shared drive.
-  Error pops out whenever VBA codes are compiled. 
+  Error pops up whenever VBA codes are compiled. 
   - Pressing "Enable Macro" button
   - Inputting any shortcuts which require a Macro compilation (e.g. Ctrl+S, Ctrl+C...)
 
@@ -16,13 +16,9 @@ Feedback from Microsoft:
 Temporary Fix:
 
   1) Copy the target file. ("test.xlsm" -> "test - Copy.xlsm"). 
-
   2) Open the copied file without Enabling Macro.
-
   3) Go to vba editor (Alt+F11).
-
   4) Make changes without impacting the code. (e.g. adding a " " and delete it)
-
   5) Save it as original name. (Replacing "test.xlsm")
   
 Files will then be recovered temporarily, but files may crash again a while later.
