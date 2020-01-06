@@ -14,18 +14,25 @@ Feedback from Microsoft:
 
 Temporary Fix:
 
-  Copy the target file. ("test.xlsm" -> "test - Copy.xlsm")
-  Open the copied file without Enabling Macro.
-  Go to vba editor (Alt+F11).
-  Make changes without impacting the code. (e.g. adding a " " and delete it)
-  Save it as original name. (Replacing "test.xlsm")
+  1) Copy the target file. ("test.xlsm" -> "test - Copy.xlsm"). 
+
+  2) Open the copied file without Enabling Macro.
+
+  3) Go to vba editor (Alt+F11).
+
+  4) Make changes without impacting the code. (e.g. adding a " " and delete it)
+
+  5) Save it as original name. (Replacing "test.xlsm")
+  
 Files will then be recovered temporarily, but files may crash again a while later.
 
 Permanent Fix:
 1) Running below command line.
 Reg.exe add "HKCU\Software\Microsoft\Office\16.0\Excel\Options" /v "ForceVBALoadFromSource" /t REG_DWORD /d "1" /f
+
 OR
 2) Running the attached ForceVBALoadFromSource.reg
+
 OR
 3) Add registry by regedit.exe
 
