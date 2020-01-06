@@ -1,7 +1,7 @@
 Fix Excel 2013 (32-bits) bug of random crashes with below description.
 
-xlsm files are displaying "Microsoft Excel has stopped working." whenever being opened.
-It occurs randomly after file access by other users.
+  xlsm files are displaying "Microsoft Excel has stopped working." whenever being opened.
+  It occurs randomly after file access by other users.
 
   Files are shared and accessed by different users in a shared drive.
   Error pops up whenever VBA codes are compiled. 
