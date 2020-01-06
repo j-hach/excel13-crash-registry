@@ -27,9 +27,7 @@ Temporary Fix:
 Files will then be recovered temporarily, but files may crash again a while later.
 
 Permanent Fix:
-1) Running below command line.
-
-Reg.exe add "HKCU\Software\Microsoft\Office\16.0\Excel\Options" /v "ForceVBALoadFromSource" /t REG_DWORD /d "1" /f
+1) Add registry by regedit.exe
 
 OR
 
@@ -37,7 +35,10 @@ OR
 
 OR
 
-3) Add registry by regedit.exe
+3) Running below command line.
+
+Reg.exe add "HKCU\Software\Microsoft\Office\16.0\Excel\Options" /v "ForceVBALoadFromSource" /t REG_DWORD /d "1" /f
+
 
 Varying by the Excel verions, registry dir may vary.
 
