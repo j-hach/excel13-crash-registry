@@ -13,6 +13,7 @@ Feedback from Microsoft:
   https://answers.microsoft.com/en-us/msoffice/forum/msoffice_excel-mso_win10-mso_o365b/excel-64-bit-crashes-in-vbe7dll-when-saving-files/ae7d5132-988b-4300-aceb-8e9fb314bd54
 
 Temporary Fix:
+
   Copy the target file. ("test.xlsm" -> "test - Copy.xlsm")
   Open the copied file without Enabling Macro.
   Go to vba editor (Alt+F11).
